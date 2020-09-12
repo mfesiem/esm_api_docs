@@ -26,7 +26,8 @@ class ESMAPIDocsSpider(scrapy.Spider):
         """
 
         yield dict(
-            url=response.url
+            url=response.url,
+            html=response.text
         )
 
         """ Iterating through the result of get_method_list()"""
@@ -54,7 +55,8 @@ class ESMAPIDocsSpider(scrapy.Spider):
         """
 
         yield dict(
-            url=response.url
+            url=response.url,
+            html=response.text
         )
 
         for esm_type in self.get_type_list(response):

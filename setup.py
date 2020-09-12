@@ -15,7 +15,7 @@ setup(
     description="Create a clickable PDF of the McAfee SIEM API documentation.",
     url='https://github.com/mfesiem/esm_api_docs_to_pdf',
     maintainer='tristanlatr',
-    version='1',
+    version='1.1',
     packages=['esm_api_docs_to_pdf',],
     install_requires=[
           'scrapy', 'scrapy-crawl-once'
