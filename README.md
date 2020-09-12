@@ -13,7 +13,7 @@ python3 -m pip install git+https://github.com/mfesiem/esm_api_docs_to_pdf.git
 
 ### Usage
 
-Indicate the script your SIEM API help page URL.  
+Indicate your SIEM API help page URL.  
 
 ```
 python3 -m esm_api_docs_to_pdf --url https://ESM_URL/rs/esm/v2/help
