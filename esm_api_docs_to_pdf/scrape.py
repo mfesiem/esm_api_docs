@@ -10,7 +10,7 @@ from scrapy.crawler import CrawlerProcess
 from scrapy.utils.project import get_project_settings
 from scrapy import spiderloader
 
-SCRAPY_SETTINGS_MODULE='esm_api_docs.settings'
+SCRAPY_SETTINGS_MODULE='esm_api_docs_to_pdf.settings'
 
 def get_settings():
     os.environ.setdefault('SCRAPY_SETTINGS_MODULE', SCRAPY_SETTINGS_MODULE)

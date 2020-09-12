@@ -1,4 +1,4 @@
-# Scrapy settings for esm_api_docs project
+# Scrapy settings for esm_api_docs_to_pdf project
 #
 # For simplicity, this file contains only settings considered important or
 # commonly used. You can find more settings consulting the documentation:
@@ -7,10 +7,10 @@
 #     https://docs.scrapy.org/en/latest/topics/downloader-middleware.html
 #     https://docs.scrapy.org/en/latest/topics/spider-middleware.html
 
-BOT_NAME = 'esm_api_docs'
+BOT_NAME = 'esm_api_docs_to_pdf'
 
-SPIDER_MODULES = ['esm_api_docs.spiders']
-NEWSPIDER_MODULE = 'esm_api_docs.spiders'
+SPIDER_MODULES = ['esm_api_docs_to_pdf.spiders']
+NEWSPIDER_MODULE = 'esm_api_docs_to_pdf.spiders'
 
 COOKIES_ENABLED=False
 

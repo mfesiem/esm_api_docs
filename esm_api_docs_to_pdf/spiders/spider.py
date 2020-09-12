@@ -3,8 +3,6 @@ import urllib.parse
 import scrapy
 from scrapy import Request
 
-from ..items import EsmApiDocsItem
-
 class ESMAPIDocsSpider(scrapy.Spider):
 
     name = "esm_api_docs"
@@ -27,7 +25,7 @@ class ESMAPIDocsSpider(scrapy.Spider):
         - response: scrapy response object for the help page
         """
 
-        yield EsmApiDocsItem(
+        yield dict(
             url=response.url
         )
 
@@ -55,7 +53,7 @@ class ESMAPIDocsSpider(scrapy.Spider):
         - response: scrapy response object for the method page
         """
 
-        yield EsmApiDocsItem(
+        yield dict(
             url=response.url
         )
 

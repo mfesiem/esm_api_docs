@@ -5,10 +5,10 @@ import subprocess
 from .scrape import scrape
 
 def parse_args():
-    parser = argparse.ArgumentParser(description="""Create a PDF of the McAfee SIEM API documentation. Store the PDF as "McAfee_SIEM_API_documentation.pdf".""", prog="python3 -m esm_api_docs")
-    parser.add_argument( '--url', help="API help URL", required=True )
-    parser.add_argument( '--out', help="Output PDF. Default is 'McAfee_SIEM_API_documentation.pdf'", default="McAfee_SIEM_API_documentation.pdf" )
-    parser.add_argument( '--wkhtmltopdf_args', help="wkhtmltopdf arguments as String")
+    parser = argparse.ArgumentParser(description="""Create a PDF of the McAfee SIEM API documentation.""", prog="python3 -m esm_api_docs_to_pdf", formatter_class=argparse.ArgumentDefaultsHelpFormatter)
+    parser.add_argument( '--url', help="SIEM API help URL.", required=True )
+    parser.add_argument( '--out', help="Output PDF.", default="McAfee_SIEM_API_documentation.pdf" )
+    parser.add_argument( '--wkhtmltopdf_args', help="wkhtmltopdf arguments as String", default=" --disable-external-links ")
     args = parser.parse_args()
     return(args)
 
