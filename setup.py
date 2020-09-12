@@ -11,7 +11,7 @@ HERE = pathlib.Path(__file__).parent
 README = (HERE / "README.md").read_text()
 
 setup(
-    name='msiempy',
+    name='esm_api_docs_to_pdf',
     description="Create a clickable PDF of the McAfee SIEM API documentation.",
     url='https://github.com/mfesiem/esm_api_docs_to_pdf',
     maintainer='tristanlatr',
